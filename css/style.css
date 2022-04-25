@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-image: url(../img/foto.jpg) ;
+    background-size :100% ;
+
+}
+
+header {
+    min-height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkcyan;
+}
+
+form {
+    display: flex;
+    text-align: left;
+    width: 600px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: dimgrey;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+  /* FOOTER DO SITE PARA CONTATO */
+footer{
+  background-color: #bbe1ea;
+  margin-top: 70px;
+  text-align: center;
+  height: 250px;
+}
+
+h2{
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+ul {
+  margin: 0;
+  padding:0;
+  
+}
+
+li {
+  list-style: none; 
+  margin: 10px;
+  display: inline;
+}
+
+li a {
+  margin:0;
+  border: 0px solid #f00; 
+  background: #7cb27d;
+  text-decoration: none;
+  color:#FFF;
+  /* cantos arredondados */
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+}
+/* MUDA O FUNDO QUANDO O MOUSE PASSA */
+li a:hover {
+  background: #d2f4e6;
+  color: #000; 
+  border-color: #000;
+}
+
+.icons-btn{
+  width: 40px;
+}

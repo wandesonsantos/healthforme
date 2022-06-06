@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Login</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
 </head>
 <body>
 <!DOCTYPE html>
@@ -54,25 +54,25 @@
 <?php
     require('db.php');
     session_start();
-    // When form submitted, check and create user session.
+    // Enviando e checando usuario no mysql
     if (isset($_POST['username'])) {
         $username = stripslashes($_REQUEST['username']);    // removes backslashes
         $username = mysqli_real_escape_string($con, $username);
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($con, $password);
-        // Check user is exist in the database
+        // Check se o usuario existe
         $query    = "SELECT * FROM `users` WHERE username='$username'
                      AND password='" . md5($password) . "'";
         $result = mysqli_query($con, $query) or die(mysql_error());
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
             $_SESSION['username'] = $username;
-            // Redirect to user dashboard page
+            // se usuario for valido 
             header("Location: dashboard.php");
         } else {
             echo "<div class='form'>
                   <h3>Incorrect Username/password.</h3><br/>
-                  <p class='link'>Click here to <a href='login.php'>Login</a> again.</p>
+                  <p class='link'>Clique aqui <a href='login.php'>Login</a> Novamente.</p>
                   </div>";
         }
     } else {
@@ -92,11 +92,11 @@
 							<h1 class="fs-4 card-title fw-bold mb-4">Login</h1>
 							<form method="POST"  name="username" class="needs-validation" novalidate="" autocomplete="off">
 								<div class="mb-3">
-									<label class="mb-2 text-muted" for="email">E-Mail</label>
+									<label class="mb-2 text-muted" for="email">Nome de Usuario</label>
 
 									<input  type="text" name="username" type="email" class="form-control" name="email" value="" required autofocus>
 									<div class="invalid-feedback">
-										Email invalido
+										Usuario invalido
 									</div>
 								</div>
 
@@ -134,7 +134,20 @@
 			</div>
 		</div>
 	</section>
-	<script src="css/login.js"></script>
+	<!-- Fim do login -->
+	<script src="js/login.js"></script>
+
+	<footer>
+        <h2>Participe das Nossa Redes Sociais</h2>
+
+        <ul class="footer-ul">
+            <li class="footer-li"><a href="#"><img class="icons-btn" src="img/instagram.png" alt="instagram"></a></li>
+            <li class="footer-li"><a href="#"><img class="icons-btn" src="img/facebook.png" alt="facebook"></a></li>
+            <li class="footer-li"><a href="#"><img class="icons-btn" src="img/whatsapp.png" alt="whatsapp"></a></li>
+        </ul><br>
+
+        <p>Created By G2- CCO2020.1 | © 2022 Todos os direitos reservados.</p>
+    </footer>
 <?php
     }
 ?>

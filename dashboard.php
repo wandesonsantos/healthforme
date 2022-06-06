@@ -29,7 +29,7 @@ include("auth_session.php");
               </button>         
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="Index.Html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               <a class="nav-link" href="videos.html">Videos</a>
               <a class="nav-link" href="index_3.html">Onde Buscar Ajuda</a>
               <a class="nav-link" href="index_4.html">Podcast</a>
@@ -73,7 +73,7 @@ include("auth_session.php");
                             </div>
                            
                             <div class="modal-footer d-block">
-                                <p class="float-start">Not yet account <a href="#">Duvidas</a></p>
+                                <p class="float-start">Em desenvolvimento <a href="#">Duvidas</a></p>
                                 <button type="submit" class="btn btn-warning float-end">Enviar</button>
                             </div>
                         </form>

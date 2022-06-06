@@ -1,4 +1,4 @@
 
 <?php
-header("Location: index.HTML");
+header("Location: index.html");
 ?>

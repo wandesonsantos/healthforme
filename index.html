@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HealthForMe</title>
+    <title>HealthForMe-Home</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,96 +21,12 @@
             background-color: #7cb27d;
 
         }
-        
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
 
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
     </style>
 </head>
 
 <body>
+  <!--Atualizando navbar para bootstrap-->
     <div class="p-1 bg-light text-black text-center">
         <h1>HealthForMe</h1>
         <p>Viva, mas viva bem!</p> 
@@ -123,7 +39,7 @@
               </button>         
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="Index.Html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               <a class="nav-link" href="videos.html">Videos</a>
               <a class="nav-link" href="index_3.html">Onde Buscar Ajuda</a>
               <a class="nav-link " href="index_4.html">Podcast</a>
@@ -135,8 +51,9 @@
         </div>
       </nav>
 <br><br><br><br>
+<!-- Fim do navbar-->
 
-<!-- The Modal -->
+<!-- Modal com javascript na imagem -->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
   <iframe width="640" height="425"src="https://www.youtube.com/embed/389W6t1cwA4"
@@ -153,12 +70,14 @@
             <div class="card-body">
               <h5 class="card-title text-center">Viva, mas viva bem!</h5>
               <p class="card-text">O segredo da saúde mental e corporal está em não se lamentar pelo passado, não se preocupar com o futuro, nem se adiantar aos problemas, mas viver sabia e seriamente o presente. A única diferença entre a loucura e a saúde mental é que a primeira é muito mais comum.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p class="card-text"><small class="text-muted">Clique na imagem para saber mais</small></p>
             </div>
           </div>
         </div>
         <br><br><br>
       </div>
+     <!-- Fim modal -->
+ 
 
 
       <div class="row">
@@ -168,17 +87,17 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Guias sohbre saude</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <p class="card-text">Conheça um pouco mais sobre sua saude mental</p>
+              <a href="index_5.html" class="btn btn-primary">Avançar</a>
             </div>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Ajude o site a crescer</h5>
+              <p class="card-text">Contribua com ideias e conteudos!!</p>
+              <a href="login.php" class="btn btn-primary">Contribuir</a>
               <br><br><br>
             </div>
           </div>
@@ -186,28 +105,8 @@
       </div>
       
  <br><br><br>
- <script>
-  // Get the modal
-  var modal = document.getElementById("myModal");
-  
-  // Get the image and insert it inside the modal - use its "alt" text as a caption
-  var img = document.getElementById("myImg");
-  var modaliframe= document.getElementById("img01");
-  var captionText = document.getElementById("caption");
-  img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-  
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-  
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() { 
-    modal.style.display = "none";
-  }
-  </script>
+ <script src="js/index.js"></script>
+
   
 
     <footer>

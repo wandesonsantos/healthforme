@@ -1,5 +1,5 @@
 .conteudo{
-    width: 490px;
+    width: 450px;
 }
 
 .titulo1{
@@ -18,6 +18,24 @@
 
 #tudo{
     padding: 0 10px;
+}
+
+footer {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+  /* FOOTER DO SITE PARA CONTATO */
+  footer{
+    background-color: #bbe1ea;
+    margin-top: 70px;
+    padding-top: 20px;
+    text-align: center;
+    height: 200px;
+}
+
+h5{
+    padding-bottom: 10px;
 }
 
 .footer-ul {
@@ -40,18 +58,19 @@
     /* cantos arredondados */
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
-    border-radius:5px; 
-    
+    border-radius:5px;
 }
-
-/* MUDA O FUNDO QUANDO O MOUSE PASSA */ 
-
-.footer-li a:hover{
+/* MUDA O FUNDO QUANDO O MOUSE PASSA */
+.footer-li a:hover {
     background: #d2f4e6;
-    color: #000;
+    color: #000; 
     border-color: #000;
 }
 
-footer{
-    text-align: center;
+.icons-btn{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0;
 }

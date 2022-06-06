@@ -30,7 +30,7 @@ include("auth_session.php");
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="Index.Html">Home</a>
-              <a class="nav-link" href="index_2.html">Videos</a>
+              <a class="nav-link" href="videos.html">Videos</a>
               <a class="nav-link" href="index_3.html">Onde Buscar Ajuda</a>
               <a class="nav-link" href="index_4.html">Podcast</a>
               <a class="nav-link" href="logout.php">Logout</a>

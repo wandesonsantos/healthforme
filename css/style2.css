@@ -1,0 +1,57 @@
+.conteudo{
+    width: 490px;
+}
+
+.titulo1{
+    float: left;
+    text-align: center;
+}
+
+.titulo2{
+    float: right;
+    text-align: center;
+}
+
+.titulo3{
+    text-align: center;
+}
+
+#tudo{
+    padding: 0 10px;
+}
+
+.footer-ul {
+    margin: 0;
+    padding:0;
+    display: inline;
+}
+
+.footer-li {
+    list-style: none; 
+    margin: 10px;
+    display: inline;
+}
+
+.footer-li a {
+    border: 0px solid #f00; 
+    background: #7cb27d;
+    text-decoration: none;
+    color:#FFF;
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px; 
+    
+}
+
+/* MUDA O FUNDO QUANDO O MOUSE PASSA */ 
+
+.footer-li a:hover{
+    background: #d2f4e6;
+    color: #000;
+    border-color: #000;
+}
+
+footer{
+    text-align: center;
+}
